@@ -22,17 +22,17 @@ python -m venv .venv
 
 Активировать venv (Windows)
 ```psh
-.venv\Scripts\activate.bat
+.venv\bin\Activate.ps1
 ```
 
 Активировать venv (Linux)
 ```bash
-source .venv\Scripts\activate
+source .venv/bin/activate
 ```
 
 Установить зависимости
 ```pip
-pip install sympy, dearpygui
+pip install -r requirements.txt
 ```
 
 Запустить

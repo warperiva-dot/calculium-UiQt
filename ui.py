@@ -28,7 +28,10 @@ def button_callback():
     else:
         combined_selver.give_info(user_input, start_end, accuracy)
         final_x, n_digits = combined_selver.compute()
-    dpg.set_value("result", f"X = {final_x:.{n_digits}f}")
+    if final_x < 0:
+        dpg.set_value("result", f"Negative, Can't solve")
+    else:
+        dpg.set_value("result", f"X = {final_x:.{n_digits}f}")
 def validate_text_input(sender):
     text = dpg.get_value(sender)
     if not ALLOWED_PATTERN.match(text):
@@ -45,7 +48,7 @@ with dpg.window(tag="Primary Window"):
     dpg.add_text("X = None", tag='result')
     dpg.add_button(label="Calculate", callback=button_callback)
 
-dpg.create_viewport(title='Custom Title', width=600, height=200)
+dpg.create_viewport(title='Calculium', width=600, height=200)
 dpg.setup_dearpygui()
 dpg.show_viewport()
 dpg.set_primary_window("Primary Window", True)
