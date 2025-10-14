@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculation</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="AccLine">
+     <item>
+      <widget class="QLabel" name="AccText">
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Точность:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="AccTextField"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AccDownButton">
+       <property name="text">
+        <string>&lt;-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AccUpButton">
+       <property name="text">
+        <string>-&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>395</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="LeftVing">
+     <item>
+      <layout class="QHBoxLayout" name="MethodLine">
+       <item>
+        <widget class="QLabel" name="MethofLabel">
+         <property name="font">
+          <font>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Метод Решения:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="MethodComboBox"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="FormulLine">
+       <item>
+        <widget class="QLabel" name="FormuklText">
+         <property name="font">
+          <font>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Формула:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="FormulField">
+         <property name="font">
+          <font>
+           <pointsize>28</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="DiapazoneLine">
+       <item>
+        <layout class="QHBoxLayout" name="StartDiapazoneLine">
+         <item>
+          <widget class="QLabel" name="StartDiapazoneText">
+           <property name="font">
+            <font>
+             <pointsize>24</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Начало диапазона (a) : </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="StartDiapazoneField"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="EndDiapazoneLine">
+         <item>
+          <widget class="QLabel" name="EndDiapazoneText">
+           <property name="font">
+            <font>
+             <pointsize>24</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Конец диапазона (b) : </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="EndDiapazoneField"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="SolverBox_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>50</y>
+      <width>351</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="SolveButton">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>11</y>
+       <width>331</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Просчитать</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SolveOutput">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>49</y>
+       <width>16</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>MethodComboBox</tabstop>
+  <tabstop>FormulField</tabstop>
+  <tabstop>StartDiapazoneField</tabstop>
+  <tabstop>EndDiapazoneField</tabstop>
+  <tabstop>AccTextField</tabstop>
+  <tabstop>SolveButton</tabstop>
+  <tabstop>AccDownButton</tabstop>
+  <tabstop>AccUpButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
