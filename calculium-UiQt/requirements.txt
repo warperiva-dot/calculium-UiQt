@@ -1,2 +1,0 @@
-dearpygui~=2.1.0
-sympy~=1.14.0
