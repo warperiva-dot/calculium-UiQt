@@ -132,4 +132,4 @@ class CombinedSolver(ChordSolver, TangentSolver):
 
 chord_solver = ChordSolver()
 tangent_solver = TangentSolver()
-combined_selver = CombinedSolver()
+combined_solver = CombinedSolver()

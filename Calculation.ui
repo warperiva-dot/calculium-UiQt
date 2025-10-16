@@ -37,7 +37,23 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="AccTextField"/>
+      <widget class="QLineEdit" name="AccTextField">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>0.001</string>
+       </property>
+       <property name="maxLength">
+        <number>7</number>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QPushButton" name="AccDownButton">
@@ -60,7 +76,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>395</width>
+      <width>400</width>
       <height>170</height>
      </rect>
     </property>
@@ -80,7 +96,28 @@
         </widget>
        </item>
        <item>
-        <widget class="QComboBox" name="MethodComboBox"/>
+        <widget class="QComboBox" name="MethodComboBox">
+         <property name="font">
+          <font>
+           <pointsize>19</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>Хорд</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Касательных</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Комбинированный</string>
+          </property>
+         </item>
+        </widget>
        </item>
       </layout>
      </item>
@@ -105,6 +142,9 @@
            <pointsize>28</pointsize>
           </font>
          </property>
+         <property name="text">
+          <string>x^4-2*x-4</string>
+         </property>
         </widget>
        </item>
       </layout>
@@ -126,7 +166,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="StartDiapazoneField"/>
+          <widget class="QLineEdit" name="StartDiapazoneField">
+           <property name="text">
+            <string>1.0</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -145,7 +189,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="EndDiapazoneField"/>
+          <widget class="QLineEdit" name="EndDiapazoneField">
+           <property name="text">
+            <string>1.75</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -165,23 +213,10 @@
     <widget class="QPushButton" name="SolveButton">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>11</y>
-       <width>331</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Просчитать</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="SolveOutput">
-     <property name="geometry">
-      <rect>
-       <x>15</x>
-       <y>49</y>
-       <width>16</width>
-       <height>28</height>
+       <x>10</x>
+       <y>0</y>
+       <width>334</width>
+       <height>34</height>
       </rect>
      </property>
      <property name="font">
@@ -190,7 +225,34 @@
       </font>
      </property>
      <property name="text">
-      <string/>
+      <string>Просчитать</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="SolveOutput">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>334</width>
+       <height>68</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="maxLength">
+      <number>7</number>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>
